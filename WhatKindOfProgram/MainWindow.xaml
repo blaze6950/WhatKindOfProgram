@@ -18,7 +18,7 @@
             </GroupBox.Header>
             <DockPanel LastChildFill="True">
                 <TextBlock VerticalAlignment="Center" FontSize="28" Margin="3">.</TextBlock>
-                <TextBox VerticalContentAlignment="Center" FontSize="28" Name="ExtensionTextBox"></TextBox>
+                <TextBox VerticalContentAlignment="Center" FontSize="28" Name="ExtensionTextBox" TextChanged="ExtensionTextBox_TextChanged"></TextBox>
             </DockPanel>
         </GroupBox>
 
