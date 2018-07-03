@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WhatKindOfProgram"
         mc:Ignorable="d"
-        Title="WhatKindOfProgram?" Height="296.897" Width="318.966">
+        Title="WhatKindOfProgram?" Height="334.897" Width="389.966">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>            
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
         <GroupBox Grid.Row="0" Margin="10">
@@ -28,6 +29,13 @@
             </GroupBox.Header>
             <TextBox IsEnabled="False" Name="ResultTextBox" VerticalContentAlignment="Center" FontSize="28"></TextBox>
         </GroupBox>
-        
+
+        <GroupBox Grid.Row="2" Margin="10">
+            <GroupBox.Header>
+                <TextBlock FontSize="18">DefaultIcon:</TextBlock>
+            </GroupBox.Header>
+            <TextBox IsEnabled="False" Name="ResultIconTextBox" VerticalContentAlignment="Center" FontSize="28"></TextBox>
+        </GroupBox>
+
     </Grid>
 </Window>

@@ -32,7 +32,7 @@ namespace WhatKindOfProgram
             set
             {
                 currentIcon = value;
-                //Event...
+                ResultIconTextBox.Text = currentIcon;
             }
         }
         public string CurrentProgramm
@@ -99,7 +99,7 @@ namespace WhatKindOfProgram
 
         private void GetIcon(RegistryKey registryKey)
         {
-            
+            CurrentIcon = (string)registryKey.GetValue(null);
         }
     }
 }
