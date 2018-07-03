@@ -5,29 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WhatKindOfProgram"
         mc:Ignorable="d"
-        Title="WhatKindOfProgram?" Height="296.897" Width="318.966">
+        Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>            
-        </Grid.RowDefinitions>
-
-        <GroupBox Grid.Row="0" Margin="10">
-            <GroupBox.Header>
-                <TextBlock FontSize="18">Enter extension:</TextBlock>
-            </GroupBox.Header>
-            <DockPanel LastChildFill="True">
-                <TextBlock VerticalAlignment="Center" FontSize="28" Margin="3">.</TextBlock>
-                <TextBox VerticalContentAlignment="Center" FontSize="28" Name="ExtensionTextBox" TextChanged="ExtensionTextBox_TextChanged"></TextBox>
-            </DockPanel>
-        </GroupBox>
-
-        <GroupBox Grid.Row="1" Margin="10">
-            <GroupBox.Header>
-                <TextBlock FontSize="18">Program for opening:</TextBlock>
-            </GroupBox.Header>
-            <TextBox IsEnabled="False" Name="ResultTextBox" VerticalContentAlignment="Center" FontSize="28"></TextBox>
-        </GroupBox>
         
     </Grid>
 </Window>

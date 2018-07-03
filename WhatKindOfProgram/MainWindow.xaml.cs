@@ -1,7 +1,5 @@
-﻿using Microsoft.Win32;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace WhatKindOfProgram
 {
@@ -21,22 +20,9 @@ namespace WhatKindOfProgram
     /// </summary>
     public partial class MainWindow : Window
     {
-        static Registry registry;
         public MainWindow()
         {
             InitializeComponent();
-            RegistryKey root = Registry.ClassesRoot
-            //Path.
-        }
-
-        private void ExtensionTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            var extension = ExtensionTextBox.Text;
-            if (extension.Contains("."))
-            {
-                extension.Remove(extension.IndexOf("."), 1);
-            }
-
         }
     }
 }
