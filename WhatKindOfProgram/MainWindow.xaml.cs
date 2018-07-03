@@ -84,9 +84,17 @@ namespace WhatKindOfProgram
 
         private void GetProgramm(RegistryKey registryKey)
         {
-            string action = (string)registryKey.GetValue(registryKey.GetValueNames()?[0]);
-            var currentProgrammKey = registryKey.OpenSubKey(action).OpenSubKey("command");
-            CurrentProgramm = (string)currentProgrammKey.GetValue(currentProgrammKey.GetValueNames()[0]);
+            string action = (string)registryKey.GetValue(registryKey.Name);
+            if (action != null)
+            {
+                var currentProgrammKey = registryKey.OpenSubKey(action).OpenSubKey("command");
+                CurrentProgramm = (string)currentProgrammKey.GetValue(currentProgrammKey.GetValueNames()[0]);
+            }
+            else
+            {
+                var currentProgrammKey = registryKey.OpenSubKey("Open").OpenSubKey("command");
+                CurrentProgramm = (string)currentProgrammKey.GetValue(currentProgrammKey.GetValueNames()[0]);
+            }
         }
 
         private void GetIcon(RegistryKey registryKey)
